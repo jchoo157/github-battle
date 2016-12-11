@@ -10,12 +10,12 @@ module.exports = {
     './app/index.js'
   ],
   output: {
-    path: __dirname + '/dist'
+    path: __dirname + '/dist',
     filename: 'index_bundle.js'
   },
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: 'babel-loader'}
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}
     ]
   },
   plugins: [HtmlWebpackPluginConfig]
